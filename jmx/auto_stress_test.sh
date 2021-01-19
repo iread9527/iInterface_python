@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # 压测脚本模板中设定的压测时间应为60秒
 export jmx_template="iInterface"
@@ -7,7 +7,7 @@ export jmx_template_filename="${jmx_template}${suffix}"
 export os_type=`uname`
 
 # 需要在系统变量中定义jmeter根目录的位置，如下
-# export jmeter_path="/your jmeter path/"
+export jmeter_path="/usr/local/apache-jmeter-5.4"
 
 echo "自动化压测开始"
 
